@@ -1,9 +1,9 @@
-  name: Kate GitHub Actions
-  on:
-    push:
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - run: |
-            make build
+name: Kate GitHub Actions
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          make build
