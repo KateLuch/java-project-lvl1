@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          java-version: '16'
       - run: |
           cd ${{ github.workspace }}
           make build
