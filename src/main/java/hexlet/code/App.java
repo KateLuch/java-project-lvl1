@@ -18,7 +18,7 @@ public class App {
             case 2:
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
-                EvenOdd.EvenOddGame();
+                EvenOdd.evenOddGame();
                 break;
             default:
                 break;
