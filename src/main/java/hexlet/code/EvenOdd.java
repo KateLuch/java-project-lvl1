@@ -7,8 +7,7 @@ public class EvenOdd {
     static void evenOddGame() {
         System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
         int correctAnswers = 0;
-        boolean loopValue = true;
-        while (loopValue) {
+        while (correctAnswers > 2) {
             Scanner askingForYesOrNo = new Scanner(System.in);
             Random randomNumber = new Random();
             Integer randomNum = randomNumber.nextInt();
@@ -29,7 +28,6 @@ public class EvenOdd {
             }
             if (correctAnswers > 2) {
                 System.out.println("Congratulations, " + App.userName + '!');
-                loopValue = false;
             }
         }
     }
