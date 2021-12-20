@@ -19,15 +19,15 @@ public class EvenOdd {
                 correctAnswers += 1;
             } else if (answer.equals("yes")) {
                 System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "
-                        + App.userName + '!');
+                        + Cli.getUserName() + '!');
                 correctAnswers = 0;
             } else {
                 System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "
-                        + App.userName + '!');
+                        + Cli.getUserName() + '!');
                 correctAnswers = 0;
             }
             if (correctAnswers > 2) {
-                System.out.println("Congratulations, " + App.userName + '!');
+                System.out.println("Congratulations, " + Cli.getUserName() + '!');
             }
         }
     }

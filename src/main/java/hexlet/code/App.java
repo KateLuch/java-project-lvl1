@@ -3,7 +3,7 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class App {
-    protected static String userName = "";
+
     public static void main(String[] args) {
         System.out.println("Please enter the game number and press Enter.\n1 - Greet\n2 - Even\n0 - Exit");
         Scanner askingForGameNum = new Scanner(System.in);

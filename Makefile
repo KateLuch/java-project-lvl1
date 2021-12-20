@@ -15,3 +15,4 @@ lint:
 
 build:
 	./gradlew clean build
+
