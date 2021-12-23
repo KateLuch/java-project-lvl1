@@ -1,13 +1,15 @@
-package hexlet.code;
+package hexlet.code.games;
+
+import hexlet.code.Cli;
 
 import java.util.Scanner;
 import java.util.Random;
 
 public class EvenOdd {
-    static void evenOddGame() {
+    public static void evenOddGame() {
         System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
         int correctAnswers = 0;
-        while (correctAnswers > 2) {
+        while (correctAnswers < 3) {
             Scanner askingForYesOrNo = new Scanner(System.in);
             Random randomNumber = new Random();
             Integer randomNum = randomNumber.nextInt();
