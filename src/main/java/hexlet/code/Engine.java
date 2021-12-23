@@ -10,6 +10,7 @@ public class Engine {
         Scanner askingForGameNum = new Scanner(System.in);
         System.out.print("Your choice: ");
         int gameNum = askingForGameNum.nextInt();
+        final int weirdLastCaseNum = 3;
         switch (gameNum) {
             case 1:
                 System.out.println("Welcome to the Brain Games!");
@@ -20,7 +21,7 @@ public class Engine {
                 Cli.greetByName();
                 EvenOdd.evenOddGame();
                 break;
-            case 3:
+            case weirdLastCaseNum:
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
                 Calc.calcGame();

@@ -7,18 +7,21 @@ import java.util.Random;
 
 public class Calc {
     public static void calcGame() {
+        final int requiredCorrectAnswers = 3;
+        final int maxBoundValue = 100;
+        final int switchBoundValue = 3;
         System.out.println("What is the result of the expression?");
         int correctAnswers = 0;
-        while (correctAnswers < 3) {
+        while (correctAnswers < requiredCorrectAnswers) {
             Scanner askingForResult = new Scanner(System.in);
             Random randomValue1 = new Random();
-            Integer randomVal1 = randomValue1.nextInt(100);
+            Integer randomVal1 = randomValue1.nextInt(maxBoundValue);
             Random randomValue2 = new Random();
-            Integer randomVal2 = randomValue2.nextInt(100);
+            Integer randomVal2 = randomValue2.nextInt(maxBoundValue);
             Random mathOperator = new Random();
             int result = 0;
 
-            switch (mathOperator.nextInt(3)) {
+            switch (mathOperator.nextInt(switchBoundValue)) {
                 case 0:
                     System.out.println("Question: " + randomVal1 + " + " + randomVal2);
                     result = randomVal1 + randomVal2; // add

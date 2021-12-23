@@ -7,9 +7,10 @@ import java.util.Random;
 
 public class EvenOdd {
     public static void evenOddGame() {
+        final int requiredCorrectAnswers = 3;
         System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
         int correctAnswers = 0;
-        while (correctAnswers < 3) {
+        while (correctAnswers < requiredCorrectAnswers) {
             Scanner askingForYesOrNo = new Scanner(System.in);
             Random randomNumber = new Random();
             int randomNum = randomNumber.nextInt();
