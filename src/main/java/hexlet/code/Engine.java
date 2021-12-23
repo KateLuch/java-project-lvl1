@@ -11,8 +11,6 @@ public class Engine {
         System.out.print("Your choice: ");
         int gameNum = askingForGameNum.nextInt();
         switch (gameNum) {
-            case 0:
-                break;
             case 1:
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();

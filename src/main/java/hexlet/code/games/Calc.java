@@ -40,8 +40,8 @@ public class Calc {
                 System.out.println("Correct!");
                 correctAnswers += 1;
             } else {
-                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + String.valueOf(result) + "'\nLet's try again, "
-                        + Cli.getUserName() + '!');
+                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + result
+                        + "'\nLet's try again, " + Cli.getUserName() + '!');
                 correctAnswers = 0;
             }
             if (correctAnswers > 2) {
