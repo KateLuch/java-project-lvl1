@@ -12,16 +12,16 @@ public class Engine {
         int gameNum = askingForGameNum.nextInt();
         final int weirdLastCaseNum = 3;
         switch (gameNum) {
-            case 1:
+            case '1':
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
                 break;
-            case 2:
+            case '2':
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
                 EvenOdd.evenOddGame();
                 break;
-            case weirdLastCaseNum:
+            case '3':
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
                 Calc.calcGame();
