@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.EvenOdd;
 import hexlet.code.games.Gcd;
+import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
@@ -25,10 +26,17 @@ public class Engine {
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
                 Calc.calcGame();
+                break;
             case "4":
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
                 Gcd.gcdGame();
+                break;
+            case "5":
+                System.out.println("Welcome to the Brain Games!");
+                Cli.greetByName();
+                Progression.progressionGame();
+                break;
             default:
                 break;
         }
