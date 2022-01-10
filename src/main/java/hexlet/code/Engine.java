@@ -4,6 +4,7 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.EvenOdd;
 import hexlet.code.games.Gcd;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -36,6 +37,11 @@ public class Engine {
                 System.out.println("Welcome to the Brain Games!");
                 Cli.greetByName();
                 Progression.progressionGame();
+                break;
+            case "6":
+                System.out.println("Welcome to the Brain Games!");
+                Cli.greetByName();
+                Prime.primeGame();
                 break;
             default:
                 break;
