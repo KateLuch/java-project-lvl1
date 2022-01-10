@@ -27,7 +27,7 @@ public class Gcd {
             } else {
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + result
                         + "'\nLet's try again, " + Cli.getUserName() + '!');
-                correctAnswers = 0;
+                break;
             }
             if (correctAnswers > 2) {
                 System.out.println("Congratulations, " + Cli.getUserName() + '!');

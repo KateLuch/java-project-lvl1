@@ -24,11 +24,11 @@ public class Prime {
             } else if (answer.equals("yes")) {
                 System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "
                         + Cli.getUserName() + '!');
-                correctAnswers = 0;
+                break;
             } else {
                 System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "
                         + Cli.getUserName() + '!');
-                correctAnswers = 0;
+                break;
             }
             if (correctAnswers > 2) {
                 System.out.println("Congratulations, " + Cli.getUserName() + '!');
