@@ -1,38 +1,23 @@
 package hexlet.code.games;
-
-import hexlet.code.Cli;
-
-import java.util.Scanner;
+import hexlet.code.Engine;
 import java.util.Random;
 
 public class Gcd {
     public static void gcdGame() {
-        final int requiredCorrectAnswers = 3;
+
         final int maxBoundValue = 100;
-        System.out.println("Find the greatest common divisor of given numbers.");
-        int correctAnswers = 0;
-        while (correctAnswers < requiredCorrectAnswers) {
-            Scanner askingForResult = new Scanner(System.in);
+        final int arraySize = 7;
+        String[] gcdLogic = new String[arraySize];
+        gcdLogic[0] = "Find the greatest common divisor of given numbers.";
+        for (int i = 1; i < gcdLogic.length; i += 2) {
             Random randomNum1 = new Random();
-            Integer num1 = randomNum1.nextInt(maxBoundValue);
+            int num1 = randomNum1.nextInt(maxBoundValue);
             Random randomNum2 = new Random();
-            Integer num2 = randomNum2.nextInt(maxBoundValue);
-            int result = gcdCalculator(num1, num2);
-            System.out.println("Question: " + num1 + ' ' + num2);
-            System.out.print("Your answer: ");
-            String answer = askingForResult.nextLine();
-            if (Integer.parseInt(answer) == result) {
-                System.out.println("Correct!");
-                correctAnswers += 1;
-            } else {
-                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + result
-                        + "'\nLet's try again, " + Cli.getUserName() + '!');
-                break;
-            }
-            if (correctAnswers > 2) {
-                System.out.println("Congratulations, " + Cli.getUserName() + '!');
-            }
+            int num2 = randomNum2.nextInt(maxBoundValue);
+            gcdLogic[i] = "Question: " + num1 + ' ' + num2;
+            gcdLogic[i + 1] = String.valueOf(gcdCalculator(num1, num2));
         }
+        Engine.gameLogic(gcdLogic);
     }
 
     private static int gcdCalculator(int num1, int num2) {

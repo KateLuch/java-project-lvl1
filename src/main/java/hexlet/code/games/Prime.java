@@ -1,39 +1,25 @@
 package hexlet.code.games;
 
-import hexlet.code.Cli;
-
-import java.util.Scanner;
+import hexlet.code.Engine;
 import java.util.Random;
-
 public class Prime {
     public static void primeGame() {
-        final int requiredCorrectAnswers = 3;
+
         final int maxBoundValue = 100;
-        System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        int correctAnswers = 0;
-        while (correctAnswers < requiredCorrectAnswers) {
-            Scanner askingForYesOrNo = new Scanner(System.in);
+        final int arraySize = 7;
+        String[] primeLogic = new String[arraySize];
+        primeLogic[0] = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+        for (int i = 1; i < primeLogic.length; i += 2) {
             Random randomNumber = new Random();
             int randomNum = randomNumber.nextInt(maxBoundValue);
-            System.out.println("Question: " + randomNum);
-            System.out.print("Your answer: ");
-            String answer = askingForYesOrNo.nextLine();
-            if ((isPrime(randomNum) && answer.equals("yes")) || (!isPrime(randomNum) && answer.equals("no"))) {
-                System.out.println("Correct!");
-                correctAnswers += 1;
-            } else if (answer.equals("yes")) {
-                System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "
-                        + Cli.getUserName() + '!');
-                break;
+            primeLogic[i] = "Question: " + randomNum;
+            if (isPrime(randomNum)) {
+                primeLogic[i + 1] = "yes";
             } else {
-                System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "
-                        + Cli.getUserName() + '!');
-                break;
-            }
-            if (correctAnswers > 2) {
-                System.out.println("Congratulations, " + Cli.getUserName() + '!');
+                primeLogic[i + 1] = "no";
             }
         }
+        Engine.gameLogic(primeLogic);
     }
 
     private static boolean isPrime(int randomNum) {
@@ -50,7 +36,7 @@ public class Prime {
     }
 
 //    public static void main(String[] args) {
-////        primeGame();
+//        primeGame();
 //        isPrime(9);
 //        System.out.println(isPrime(9));
 //
