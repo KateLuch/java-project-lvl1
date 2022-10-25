@@ -13,7 +13,7 @@ application {
     mainClass = 'hexlet.gradle.App'
 }
 compileJava {
-    options.release = 17
+    options.release = 16
 }
 
 repositories {
