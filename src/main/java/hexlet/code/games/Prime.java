@@ -1,6 +1,6 @@
-package hexlet.gradle.games;
+package hexlet.code.games;
 
-import hexlet.gradle.Engine;
+import hexlet.code.Engine;
 import java.util.Random;
 public class Prime {
     public static void primeGame() {

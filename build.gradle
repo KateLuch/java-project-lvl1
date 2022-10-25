@@ -10,7 +10,7 @@ plugins {
     id 'checkstyle'
 }
 application {
-    mainClass = 'hexlet.gradle.App'
+    mainClass = 'hexlet.code.App'
 }
 compileJava {
     options.release = 16
