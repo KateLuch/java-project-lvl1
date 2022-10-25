@@ -6,7 +6,7 @@ public class EvenOdd {
     public static void evenOddGame() {
         final int arraySize = 7;
         String[] evenOddLogic = new String[arraySize];
-        evenOddLogic[0] = "Answer 'yes' if number even otherwise answer 'no'.";
+        evenOddLogic[0] = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         for (int i = 1; i < evenOddLogic.length; i += 2) {
             Random randomNumber = new Random();
             int randomNum = randomNumber.nextInt();
