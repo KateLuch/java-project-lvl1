@@ -1,4 +1,4 @@
-package hexlet.code;
+package hexlet.gradle;
 import java.util.Scanner;
 public class Engine {
     public static void gameLogic(String[] gameValues) {

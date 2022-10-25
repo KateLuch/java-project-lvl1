@@ -1,6 +1,6 @@
-package hexlet.code.games;
+package hexlet.gradle.games;
 
-import hexlet.code.Engine;
+import hexlet.gradle.Engine;
 import java.util.Random;
 public class Calc {
     public static void calcGame() {

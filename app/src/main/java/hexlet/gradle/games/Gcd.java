@@ -1,5 +1,5 @@
-package hexlet.code.games;
-import hexlet.code.Engine;
+package hexlet.gradle.games;
+import hexlet.gradle.Engine;
 import java.util.Random;
 
 public class Gcd {
